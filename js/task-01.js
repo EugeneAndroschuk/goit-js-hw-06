@@ -8,6 +8,6 @@ console.log('Number of categories:', categoriesOfUl.length);
 
 
 const headOfCategory = [...categoriesOfUl].map(category => {
-    console.log('Category:', category.querySelector("h2").textContent);
-    console.log('Elements:', category.querySelectorAll('li').length);
+    console.log('Category:', category.firstElementChild.textContent);
+    console.log('Elements:', category.lastElementChild.children.length);
 });
